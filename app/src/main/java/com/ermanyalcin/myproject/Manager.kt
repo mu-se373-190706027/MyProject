@@ -19,6 +19,7 @@ class Manager : AppCompatActivity() {
         val nameListPool = arrayListOf<String>()
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_manager)
@@ -29,6 +30,8 @@ class Manager : AppCompatActivity() {
         findViewById<TextView>(R.id.managerAnnouncement2).text = sharedPreferences1.getString("announcement2", "Add Announcement..")
         findViewById<TextView>(R.id.managerAnnouncement3).text = sharedPreferences1.getString("announcement3", "Add Announcement..")
         findViewById<TextView>(R.id.managerAnnouncement4).text = sharedPreferences1.getString("announcement4", "Add Announcement..")
+
+        findViewById<TextView>(R.id.welcomeManager).text = "Welcome to the Resident Page as " + IdAndPasswordControll.takename.takeName
 
         updateAppoinmentGym()
         updateAppoinmentPool()

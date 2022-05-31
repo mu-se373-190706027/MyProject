@@ -12,6 +12,7 @@ import android.widget.Toast
 
 class Security : AppCompatActivity() {
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_security)
@@ -22,6 +23,8 @@ class Security : AppCompatActivity() {
         findViewById<TextView>(R.id.securityAnnouncement2).text = sharedPreferences1.getString("announcement2", "error")
         findViewById<TextView>(R.id.securityAnnouncement3).text = sharedPreferences1.getString("announcement3", "error")
         findViewById<TextView>(R.id.securityAnnouncement4).text = sharedPreferences1.getString("announcement4", "error")
+
+        findViewById<TextView>(R.id.welcomeSecurity).text = "Welcome to the Resident Page as " + IdAndPasswordControll.takename.takeName
 
         updateAppoinmentGymSecurity()
         updateAppoinmentPoolSecurity()

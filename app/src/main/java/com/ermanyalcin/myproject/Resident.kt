@@ -13,7 +13,7 @@ import androidx.core.view.isVisible
 
 class Resident : AppCompatActivity() {
 
-    @SuppressLint("CommitPrefEdits")
+    @SuppressLint("CommitPrefEdits", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resident)
@@ -27,7 +27,7 @@ class Resident : AppCompatActivity() {
         findViewById<TextView>(R.id.residentAnnouncement3).text = sharedPreferences1.getString("announcement3", "error")
         findViewById<TextView>(R.id.residentAnnouncement4).text = sharedPreferences1.getString("announcement4", "error")
 
-
+        findViewById<TextView>(R.id.welcomeResident).text = "Welcome to the Resident Page as " + IdAndPasswordControll.takename.takeName
 
         if(sharedPreferences1.getInt(IdAndPasswordControll.takename.takeName+"gym",0) == 0){
             sharedPreferences1.edit().putInt(IdAndPasswordControll.takename.takeName+"gym",1)
