@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyProject</string>
+    <string name="resident">Resident</string>
+    <string name="welcome_to_the_apartment_communication_program">Welcome to the apartment communication program</string>
+    <string name="please_select_your_title">Please select your title</string>
+    <string name="security">Security</string>
+    <string name="manager">Manager</string>
+    <string name="go_back">Go Back</string>
+    <string name="id">İD</string>
+    <string name="please_enter_your_id_and_password">Please Enter your id and password</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="add_member">Add Member</string>
+    <string name="register">Register</string>
+</resources>

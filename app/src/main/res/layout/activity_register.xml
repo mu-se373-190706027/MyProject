@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8E8E8E"
+    tools:context="com.ermanyalcin.myproject.RegisterActivity">
+
+
+    <RadioGroup
+        android:id="@+id/radioGender"
+        android:layout_width="377dp"
+        android:layout_height="77dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233">
+
+
+        <RadioButton
+            android:id="@+id/radioButtonRegister"
+            android:layout_width="116dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Resident" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSecurity"
+            android:layout_width="129dp"
+            android:layout_height="58dp"
+            android:checked="false"
+            android:text="Security" />
+
+        <RadioButton
+            android:id="@+id/radioButtonManager"
+            android:layout_width="116dp"
+            android:layout_height="58dp"
+            android:checked="false"
+            android:text="Manager" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="315dp"
+        android:layout_height="49dp"
+        android:autofillHints=""
+        android:hint="@string/id"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#212121"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="313dp"
+        android:layout_height="51dp"
+        android:autofillHints=""
+        android:fontFamily="sans-serif"
+        android:hint="@string/password"
+        android:inputType="date|textUri|textShortMessage|textLongMessage|textAutoCorrect|numberSigned|textVisiblePassword|textWebEditText|textMultiLine|textNoSuggestions|textFilter|number|datetime|textWebEmailAddress|textPersonName|text|textPhonetic|textCapSentences|textPassword|textAutoComplete|textImeMultiLine|textPostalAddress|numberDecimal|textEmailAddress|numberPassword|textCapWords|phone|textEmailSubject|textCapCharacters|time|textWebPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#212121"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="155dp"
+        android:layout_height="37dp"
+        android:background="#817474"
+        android:text="@string/go_back"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="#3E2723"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936" />
+
+    <TextView
+        android:id="@+id/buttonRegister"
+        android:layout_width="155dp"
+        android:layout_height="36dp"
+        android:background="#817474"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textColor="#3E2723"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="208dp"
+        android:layout_height="41dp"
+        android:background="#A68E8E"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

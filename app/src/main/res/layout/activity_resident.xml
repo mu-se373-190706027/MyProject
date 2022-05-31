@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8E8E8E"
+    tools:context=".Resident">
+
+    <TextView
+        android:id="@+id/goBackResident"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:onClick="goBackMainPage"
+        android:text="@string/go_back"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/welcomeResident"
+        android:layout_width="349dp"
+        android:layout_height="35dp"
+        android:background="#AE8288"
+        android:text="Welcome to the Resident Page"
+        android:textAlignment="center"
+        android:textColorHighlight="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupresident"
+        android:layout_width="356dp"
+        android:layout_height="244dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#C96D32C1"
+            android:text="Announcements"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/residentAnnouncement1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#52FFFFFF"
+            android:ems="10"
+            android:gravity="fill"
+            android:hint="No Anouncement"
+            android:inputType="textPersonName"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/residentAnnouncement2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#52FFFFFF"
+            android:ems="10"
+            android:gravity="fill"
+            android:hint="No Anouncement"
+            android:inputType="textPersonName"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/residentAnnouncement3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#52FFFFFF"
+            android:ems="10"
+            android:gravity="fill"
+            android:hint="No Anouncement"
+            android:inputType="textPersonName"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/residentAnnouncement4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#52FFFFFF"
+            android:ems="10"
+            android:gravity="fill"
+            android:hint="No Anouncement"
+            android:inputType="textPersonName"
+            android:textSize="12sp" />
+
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="235dp"
+        android:layout_height="157dp"
+        android:background="#606060"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849">
+
+        <TextView
+            android:id="@+id/gymStatusResident"
+            android:layout_width="102dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="12dp"
+            android:background="#EAA8A8"
+            android:gravity="center"
+            android:text="Status: Doesn't have appointment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toEndOf="@+id/takeAppointmentGym"
+            app:layout_constraintTop_toBottomOf="@+id/poolStatusResident"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/takeAppointmentGym"
+            android:layout_width="100dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="12dp"
+            android:background="#EAA8A8"
+            android:gravity="center"
+            android:onClick="takeAppointmentGym"
+            android:text="Take appointment for gym"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/takeAppointmentPool"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/takeAppointmentPool"
+            android:layout_width="100dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:background="#6F77EDED"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="takeAppointmentPool"
+            android:text="Take appointment for Pool"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/poolStatusResident"
+            android:layout_width="103dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="#6F77EDED"
+            android:gravity="center"
+            android:text="Status: Doesn't have appointment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.222"
+            app:layout_constraintStart_toEndOf="@+id/takeAppointmentPool"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8E8E8E"
+    tools:context=".Security">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="375dp"
+        android:layout_height="156dp"
+        android:background="#606060"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.843">
+
+        <TextView
+            android:id="@+id/disapproveGymSecurity"
+            android:layout_width="61dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="84dp"
+            android:background="#6FED7777"
+            android:gravity="center"
+            android:onClick="DontApproveAppoinmentGymSecurity"
+            android:text="Disapprove"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.919"
+            app:layout_constraintStart_toEndOf="@+id/InfoPoolSecurity"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ApproveGymSecurity"
+            android:layout_width="61dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="84dp"
+            android:background="#6F7FED77"
+            android:gravity="center"
+            android:onClick="approveAppoinmentGymSecurity"
+            android:text="Approve"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.566"
+            app:layout_constraintStart_toEndOf="@+id/InfoPoolSecurity"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ApprovePoolSecurity"
+            android:layout_width="61dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="#6F7FED77"
+            android:gravity="center"
+            android:onClick="approveAppoinmentPoolSecurity"
+            android:text="Approve"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.567"
+            app:layout_constraintStart_toEndOf="@+id/InfoPoolSecurity"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/DisapprovePoolSecurity"
+            android:layout_width="61dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="#6FED7777"
+            android:gravity="center"
+            android:onClick="DontApproveAppoinmentPoolSecurity"
+            android:text="Disapprove"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.922"
+            app:layout_constraintStart_toEndOf="@+id/InfoPoolSecurity"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ArrangeForGymSecurity"
+            android:layout_width="99dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginBottom="12dp"
+            android:background="#EAA8A8"
+            android:gravity="center"
+            android:text="Arrange for: -"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/infoGymSecurity"
+            app:layout_constraintTop_toBottomOf="@+id/ArrangeForPoolSecurity"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/infoGymSecurity"
+            android:layout_width="100dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="12dp"
+            android:background="#EAA8A8"
+            android:gravity="center"
+            android:text="arrange appointment for gym"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InfoPoolSecurity"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/InfoPoolSecurity"
+            android:layout_width="100dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:background="#6F77EDED"
+            android:gravity="center"
+            android:text="arrange appointment for Pool"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ArrangeForPoolSecurity"
+            android:layout_width="99dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="156dp"
+            android:background="#6F77EDED"
+            android:gravity="center"
+            android:text="Arrange for: -"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/InfoPoolSecurity"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/goBackSecurity"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:onClick="goBackMainPage"
+        android:text="@string/go_back"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupsecurity"
+        android:layout_width="356dp"
+        android:layout_height="244dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#C96D32C1"
+            android:text="Announcements"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/securityAnnouncement1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#52FFFFFF"
+            android:ems="10"
+            android:gravity="fill"
+            android:hint="No Anouncement"
+            android:inputType="textPersonName"
+            android:textAlignment="gravity"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/securityAnnouncement2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#52FFFFFF"
+            android:ems="10"
+            android:gravity="fill"
+            android:hint="No Anouncement"
+            android:inputType="textPersonName"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/securityAnnouncement3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#52FFFFFF"
+            android:ems="10"
+            android:gravity="fill"
+            android:hint="No Anouncement"
+            android:inputType="textPersonName"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/securityAnnouncement4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#52FFFFFF"
+            android:ems="10"
+            android:gravity="fill"
+            android:hint="No Anouncement"
+            android:inputType="textPersonName"
+            android:textSize="12sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/welcomeSecurity"
+        android:layout_width="349dp"
+        android:layout_height="35dp"
+        android:background="#AE8288"
+        android:text="Welcome to the Security Page"
+        android:textAlignment="center"
+        android:textColorHighlight="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+</androidx.constraintlayout.widget.ConstraintLayout>

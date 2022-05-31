@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8E8E8E"
+    tools:context=".Manager">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="345dp"
+        android:layout_height="163dp"
+        android:background="#606060"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85">
+
+        <TextView
+            android:id="@+id/disapproveGymManager"
+            android:layout_width="53dp"
+            android:layout_height="55dp"
+            android:background="#6FED7777"
+            android:gravity="center"
+            android:onClick="DontApproveAppoinmentGym"
+            android:text="Disapprove"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.948"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.851" />
+
+        <TextView
+            android:id="@+id/ApproveGymManager"
+            android:layout_width="51dp"
+            android:layout_height="55dp"
+            android:background="#6F7FED77"
+            android:gravity="center"
+            android:onClick="approveAppoinmentGym"
+            android:text="Approve"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.734"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.844" />
+
+        <TextView
+            android:id="@+id/ApprovePoolManager"
+            android:layout_width="51dp"
+            android:layout_height="56dp"
+            android:background="#6F7FED77"
+            android:gravity="center"
+            android:onClick="approveAppoinmentPool"
+            android:text="Approve"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.734"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.158" />
+
+        <TextView
+            android:id="@+id/DisapprovePoolManager"
+            android:layout_width="52dp"
+            android:layout_height="56dp"
+            android:background="#6FED7777"
+            android:gravity="center"
+            android:onClick="DontApproveAppoinmentPool"
+            android:text="Disapprove"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.945"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.158" />
+
+        <TextView
+            android:id="@+id/ArrangeForGymManager"
+            android:layout_width="75dp"
+            android:layout_height="56dp"
+            android:background="#EAA8A8"
+            android:gravity="center"
+            android:text="Arrange for: -"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.859" />
+
+        <TextView
+            android:id="@+id/infoGymManager"
+            android:layout_width="96dp"
+            android:layout_height="56dp"
+            android:background="#EAA8A8"
+            android:gravity="center"
+            android:text="arrange appointment for gym"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.859" />
+
+        <TextView
+            android:id="@+id/InfoPoolMAnager"
+            android:layout_width="93dp"
+            android:layout_height="56dp"
+            android:background="#6F77EDED"
+            android:gravity="center"
+            android:text="arrange appointment for Pool"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.149" />
+
+        <TextView
+            android:id="@+id/ArrangeForPoolManager"
+            android:layout_width="75dp"
+            android:layout_height="57dp"
+            android:background="#6F77EDED"
+            android:gravity="center"
+            android:text="Arrange for: -"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroupmanager"
+        android:layout_width="367dp"
+        android:layout_height="225dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#C96D32C1"
+            android:text="Announcements"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/managerAnnouncement1"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="#52FFFFFF"
+            android:ems="10"
+            android:hint="Add Text"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/managerAnnouncement2"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#52FFFFFF"
+            android:ems="10"
+            android:hint="Add Text"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/managerAnnouncement3"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="#52FFFFFF"
+            android:ems="10"
+            android:hint="Add Text"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/managerAnnouncement4"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#52FFFFFF"
+            android:ems="10"
+            android:hint="Add Text"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="#7A5DAC48"
+            android:onClick="saveAnnouncements"
+            android:text="Save"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/welcomeManager"
+        android:layout_width="349dp"
+        android:layout_height="35dp"
+        android:background="#AE8288"
+        android:text="Welcome to the Manager Page"
+        android:textAlignment="center"
+        android:textColorHighlight="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <TextView
+        android:id="@+id/goBackManager"
+        android:layout_width="149dp"
+        android:layout_height="48dp"
+        android:onClick="goBackMainPage"
+        android:text="@string/go_back"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
